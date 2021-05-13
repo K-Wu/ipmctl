@@ -31,7 +31,7 @@
 
 #include "../common/port.h"
 
-#if defined(__arm__) || defined(__thumb__) || \
+#if defined(__arm__) || defined(__aarch64__) || defined(__thumb__) || \
     defined(_M_ARM) || defined(_M_ARMT)
 #define BROTLI_TARGET_ARM
 #if (defined(__ARM_ARCH) && (__ARM_ARCH >= 7)) || \

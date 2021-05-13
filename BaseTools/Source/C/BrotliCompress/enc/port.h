@@ -70,7 +70,7 @@
 #define BROTLI_UNALIGNED_STORE64(_p, _val) \
   (*(uint64_t *)(_p) = (_val))
 
-#elif defined(__arm__) && \
+#elif (defined(__arm__) || defined(__aarch64__)) && \
   !defined(__ARM_ARCH_5__) && \
   !defined(__ARM_ARCH_5T__) && \
   !defined(__ARM_ARCH_5TE__) && \
